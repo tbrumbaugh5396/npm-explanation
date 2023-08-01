@@ -105,4 +105,7 @@ There are more available here: https://nodesource.com/blog/eleven-npm-tricks-tha
 
 ## Added npm packages:
 Here are a list of npm packages that I have added to my personal machine:
-- meta-git
+- meta-git (npm install meta-git --global)
+
+NPM is locked from global installations in NixOS because the NixOS packages's filesystem is read-only.
+Therefore, you have to Nixify your installation: http://nicknovitski.com/nix-npm-install
