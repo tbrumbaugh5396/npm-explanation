@@ -102,3 +102,7 @@ Often times, we want the module that we are installing to be available everywher
 - npm install <module> --global
 
 There are more available here: https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off
+
+## Added npm packages:
+Here are a list of npm packages that I have added to my personal machine:
+- meta-git
