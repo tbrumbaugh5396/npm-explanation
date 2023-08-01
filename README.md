@@ -109,3 +109,7 @@ Here are a list of npm packages that I have added to my personal machine:
 
 NPM is locked from global installations in NixOS because the NixOS packages's filesystem is read-only.
 Therefore, you have to Nixify your installation: http://nicknovitski.com/nix-npm-install
+However, I am using NixOS so this can be done by adding the following line to configuration.nix:
+- nodePackages.typescript
+
+However, I can't find meta-git this way so I will continue to find a way to install it globally.
