@@ -72,8 +72,11 @@ Example package.json:
 }'''
 
 # What are the commands for NPM?
-NPM initalize will help initial a node project for you with the appropriate package.json information:
+NPM initalize will help initial a node project for you with the appropriate package.json information using the command:
 - npm init
+
+You can initalize quickly with default values using the command:
+- npm init --yes
 
 package.json also contains the package dependancies and developer dependancies for a project.
 Therefore, we do not need to (or shouldn't) bundle our dependancies with our project.
@@ -83,9 +86,19 @@ The versions of these packages are specified via semantic versioning.
 Checkout this link to learn more about semantic versioning or SemVer: https://nodesource.com/blog/semver-a-primer/
 -------------------------------------------------------------------------------------------------------------------------
 
-You can install all of these dependancies once in your project and get all the dependancies listed in you package.json:
-- npm install
+You can install all of these dependancies once in your project and get all the dependancies listed in you package.json using the command:
+- npm install or npm i (for short)
 
+You can install a specific module using the command:
+- npm install <module> or npm i <module> (for short)
 
+If you want to install the specific module to your package.json add the option --save to the install using the command:
+- npm install <module> --save
 
-# How does NPM work?
+If you want to install the specific module under the devDependancies in your package.json add the option --save-dev to install using the command:
+- npm install <module> --save-dev
+
+Often times, we want the module that we are installing to be available everywhere (rather than locally) using npm so we add the option --global to install using the command:
+- npm install <module> --global
+
+There are more available here: https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off
